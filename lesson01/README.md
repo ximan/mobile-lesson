@@ -96,3 +96,7 @@ PC用jQuery，移动端可以考虑用[Zepto](http://zeptojs.com/)代替
 [移动前端开发之viewport的深入理解](http://www.cnblogs.com/2050/p/3877280.html)、
 [lib.flexible](https://github.com/amfe/lib-flexible)、
 [手机端网页调试方案](https://segmentfault.com/a/1190000000313211)
+
+## 课下作业
+
+写一个手机网页，包含头部标题模块、中间整屏banner模块、下面正文模块、底部版权模块。
