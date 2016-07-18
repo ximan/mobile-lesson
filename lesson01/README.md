@@ -21,8 +21,8 @@
 手机浏览器里打开一个网页，如果没经过优化，你会发现，网页会占满整个屏幕，而且文字都很小。这对手机用户是非常不好的体验，这里涉及到的知识叫viewport。加上这个meta标签后，页面就会按照手机的屏幕来适配了。
 
 示例：
-[PC页面](01_pc_page.html)、
-[H5页面](02_h5_page.html)
+[PC页面](http://ximan.github.io/mobile-lesson/lesson01/01_pc_page.html)、
+[H5页面](http://ximan.github.io/mobile-lesson/lesson01/02_h5_page.html)
 
 ```
 <meta name="viewport" content="width=device-width, user-scalable=0">
@@ -42,14 +42,14 @@
 ### 移动端布局viewport业界主流方法
 
 * `width=device-width` 大部分网页都是网页宽度等于设备宽度
-* 动态计算viewport，代表：lib.flexible，[计算viewport示例](03_rem_viewport.html)
+* 动态计算viewport，代表：lib.flexible，[计算viewport示例](http://ximan.github.io/mobile-lesson/lesson01/03_rem_viewport.html)
 * `width=640` 按照设计稿，定死viewport宽度
 
 ## devicePixelRatio
 
 devicePixelRatio是设备上物理像素和设备独立像素的比例。
 
-为什么iPhone 4的640x960分辨率、iPhone 6的750x1334分辨率，即使网页上设置了meta设备宽度等于屏幕宽度`width=device-width`，实际网页却是320x480、375x667？为什么你在网页里加了一个img标签，插入一张图片，结果手机显示特别模糊？[图片示例](04_image.html)。这个就是devicePixelRatio引发的问题。
+为什么iPhone 4的640x960分辨率、iPhone 6的750x1334分辨率，即使网页上设置了meta设备宽度等于屏幕宽度`width=device-width`，实际网页却是320x480、375x667？为什么你在网页里加了一个img标签，插入一张图片，结果手机显示特别模糊？[图片示例](http://ximan.github.io/mobile-lesson/lesson01/04_image.html)。这个就是devicePixelRatio引发的问题。
 
 ![像素对比](images/pixels.jpg)
 
