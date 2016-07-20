@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <title>固定宽度布局</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+}
+.wrap{
+    width: 320px;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    text-align: center;
+}
+.header a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    background: url(images/back.png) center no-repeat;
+    background-size: 13px 24px;
+}
+.header h1{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #000;
+    vertical-align: top;
+}
+.banner img{
+    max-width: 100%;
+}
+.list{
+    margin: 10px auto;
+    border-top: 1px solid #e0e0e0;
+}
+.list .item{
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+    text-decoration: none;
+}
+.list .item .pic{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.list .item .pic img{
+    width: 60px;
+    height: 60px;
+}
+.list .item .box{
+    overflow: hidden;
+}
+.list .item .box h3{
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+.list .item .box p{
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #666;
+}
+.footer{
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <a href="javascript:;" class="back"></a>
+    <h1>固定宽度布局</h1>
+</div>
+<div class="banner wrap">
+    <img src="http://d8.yihaodianimg.com/N10/M02/13/34/ChEi21eIVAyAZ_47AAFUdFaDNDs58500.jpg" alt="">
+</div>
+<div class="list wrap">
+    <a href="javascript:;" class="item">
+        <div class="pic">
+            <img src="http://d9.yihaodianimg.com/N08/M0A/3F/4C/ChEi1VZL-gCADeJ4AADrKGqqr2g55100_120x120.jpg" alt="">
+        </div>
+        <div class="box">
+            <h3>商品标题商品标题商品标题</h3>
+            <p>商品描述商品描述商品描述商品描述商品描述商品描述商品描述</p>
+        </div>
+    </a>
+    <a href="javascript:;" class="item">
+        <div class="pic">
+            <img src="http://d9.yihaodianimg.com/N08/M0A/3F/4C/ChEi1VZL-gCADeJ4AADrKGqqr2g55100_120x120.jpg" alt="">
+        </div>
+        <div class="box">
+            <h3>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h3>
+            <p>商品描述商品描述商品描述商品描述商品描述商品描述商品描述</p>
+        </div>
+    </a>
+    <a href="javascript:;" class="item">
+        <div class="pic">
+            <img src="http://d9.yihaodianimg.com/N08/M0A/3F/4C/ChEi1VZL-gCADeJ4AADrKGqqr2g55100_120x120.jpg" alt="">
+        </div>
+        <div class="box">
+            <h3>商品标题商品标题商品标题</h3>
+            <p>商品描述商品描述商品描述商品描述商品描述商品描述商品描述</p>
+        </div>
+    </a>
+</div>
+<div class="footer">《七天精通移动端网页布局》版权所有</div>
+</body>
+</html>
