@@ -22,17 +22,17 @@ iOS和Android绝大部分浏览器都是机遇webkit，所以一般属性只写`
 
 首先来看看喜欢的人非常喜欢（例如我）、讨厌的人非常讨厌的Flexbox。
 
-![Flexbox version](flexbox_version.png)
+![Flexbox version](images/flexbox_version.png)
 
 上图是截至本文时，所有官方公布的Flexbox讨论结果，居然出了10版！最新一版里，Flexbox的属性已经超过了10个！不过不要紧，因为其中一部分属性大部分手机都不支持，所以下面我介绍的是iOS 7+、Android 2.3+、Windows Phone 8+都支持的属性，大家可以放心的使用。
 
-![Flexbox](flexbox.png)
+![Flexbox](images/flexbox.png)
 
 ## Flexbox伸缩容器
 
 ### flex-direction 轴方向
 
-![flex-direction](flex-direction.png)
+![flex-direction](images/flex-direction.png)
 
 * 左到右：row（默认）
 * 右到左：row-reverse
@@ -41,7 +41,7 @@ iOS和Android绝大部分浏览器都是机遇webkit，所以一般属性只写`
 
 ### justify-content 主轴对齐
 
-![justify-content](justify-content.png)
+![justify-content](images/justify-content.png)
 
 * 前：flex-start（默认）
 * 后：flex-end
@@ -51,7 +51,7 @@ iOS和Android绝大部分浏览器都是机遇webkit，所以一般属性只写`
 
 ### align-items 侧轴对齐
 
-![align-items](align-items.png)
+![align-items](images/align-items.png)
 
 * 顶：flex-start（伸缩项目固定高度的情况，默认）
 * 底：flex-end
@@ -65,13 +65,13 @@ iOS和Android绝大部分浏览器都是机遇webkit，所以一般属性只写`
 
 （标准版里这是3个属性的简写，因为兼容性问题，所以这里介绍的等价于flex-grow）
 
-![flex](flex.png)
+![flex](images/flex.png)
 
 * &lt;number&gt;（默认为0）
 
 ### order 排序
 
-![order](order.png)
+![order](images/order.png)
 
 * &lt;integer&gt;
 
@@ -133,3 +133,6 @@ transform: translate(-50%, -50%);
 
 ## 课下作业
 
+请按照下图设计稿写出页面。
+
+![模块组合布局](images/homework.jpg)
