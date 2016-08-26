@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <title>slideToggle</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.2rem;
+}
+h2{
+    line-height: 30px;
+    padding-top: 10px;
+    font-size: 1.8rem;
+}
+.example{
+    position: relative;
+    border: 1px solid #ccc;
+}
+.example .btn_example{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+}
+/*用CSS实现slideToggle滑动效果*/
+.css_slide_toggle{
+    height: 100px;
+}
+.css_slide_toggle .slide_toggle{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: #f00;
+    -webkit-transition:height .5s linear;
+    transition:height .5s linear;
+}
+.css_slide_toggle .slide_toggle.slide{
+    height: 0;
+}
+</style>
+</head>
+<h2>用CSS实现slideToggle滑动效果</h2>
+<div class="example css_slide_toggle">
+    <div class="slide_toggle"></div>
+    <p>正文正文正文正文</p>
+    <a href="javascript:;" class="btn_example">执行按钮</a>
+</div>
+<script>
+document.querySelector('.css_slide_toggle .btn_example').addEventListener('click', function(){
+    var $slideToggle = document.querySelector('.slide_toggle');
+    if($slideToggle.classList.contains('slide')){
+        $slideToggle.classList.remove('slide');
+    }else{
+        $slideToggle.classList.add('slide');
+    }
+},false);
+</script>
+</body>
+</html>

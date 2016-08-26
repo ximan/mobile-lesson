@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <title>animate动画</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.2rem;
+}
+h2{
+    line-height: 30px;
+    padding-top: 10px;
+    font-size: 1.8rem;
+}
+.example{
+    position: relative;
+    border: 1px solid #ccc;
+}
+.example .btn_example{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+}
+/*用CSS实现animate动画*/
+.css_animate{
+    height: 100px;
+}
+.css_animate .box{
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    color: #fff;
+}
+.css_animate .box.move{
+    -webkit-animation:css_animate 3s linear forwards;
+    animation:css_animate 3s linear forwards;
+}
+@-webkit-keyframes css_animate{
+    0%{
+        -webkit-transform:translate(0,0);
+        transform:translate(0,0);
+        background-color: #f00;
+        opacity: 1;
+    }
+    33%{
+        -webkit-transform:translate(100px,50px);
+        transform:translate(100px,50px);
+        background-color: #f00;
+        opacity: 1;
+    }
+    66%{
+        -webkit-transform:translate(100px,50px);
+        transform:translate(100px,50px);
+        background-color: #00f;
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform:translate(100px,50px);
+        transform:translate(100px,50px);
+        background-color: #f00;
+        opacity: 0;
+    }
+}
+</style>
+</head>
+<h2>用CSS实现animate动画</h2>
+<div class="example css_animate">
+    <div class="box">
+        先向右<br>
+        再变色<br>
+        最后渐隐
+    </div>
+    <a href="javascript:;" class="btn_example">执行按钮</a>
+</div>
+<script>
+document.querySelector('.css_animate .btn_example').addEventListener('click', function(){
+    var $box = document.querySelector('.css_animate .box');
+    if($box.classList.contains('move')){
+        $box.classList.remove('move');
+    }else{
+        $box.classList.add('move');
+    }
+},false);
+</script>
+</body>
+</html>
